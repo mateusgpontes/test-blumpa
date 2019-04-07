@@ -9,6 +9,8 @@ exports.get = async(req, res, next) => {
         if(aux % 3 === 0){
             aux = "fizz";
 
+        }else if(aux % 5 === 0){
+            aux = "buzz"
         };
 
         list.push(aux)
